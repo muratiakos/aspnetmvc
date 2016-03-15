@@ -1,2 +1,4 @@
-# aspnetmvc
-Microsoft ASP.NET MVC choco package
+# aspnetmvc - choco package
+
+This repository is a choco package project to install and uninstall ASP.NET MVC
+via chocolatey in an unattended manner.

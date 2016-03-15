@@ -18,6 +18,10 @@
       ASP.NET MVC 2 is a free, fully supported Microsoft framework for developing highly testable and maintainable Web applications by leveraging the Model-View-Controller (MVC) pattern.
       The framework encourages developers to maintain a clear separation of concerns among the responsibilities of the application – the UI logic using the view, user-input handling using the controller, and the domain logic using the model.
       ASP.NET MVC applications are easily testable using techniques such as test-driven development (TDD).
+
+      The ASP.NET MVC site  site provides tutorials, quickstarts, and videos. (http://www.asp.net/mvc/)
+
+      ASP.NET MVC Documentation on MSDN. (http://msdn.microsoft.com/en-us/library/dd394709.aspx)
     </description>
     <releaseNotes>
       1) Templated Helpers Allow You to Specify Extra View Data
