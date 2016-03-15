@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>aspnetmvc2</id>
+    <title>ASP.NET MVC 2</title>
+    <version>2.0.60926.0</version>
+    <authors>Microsoft Asp.Net Team</authors>
+
+    <licenseUrl>http://aspnet.codeplex.com/license</licenseUrl>
+    <projectUrl>http://www.asp.net/mvc</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <owners>Akos Murati</owners>
+    <tags>aspnetmvc aspnetmvc2 asp.net mvc mvc2 admin</tags>
+
+    <summary>ASP.NET MVC 2 provides a free Model-View-Controller (MVC) framework on top of the existing ASP.NET 3.5 SP1 runtime.</summary>
+    <description>
+      ASP.NET MVC 2 is a free, fully supported Microsoft framework for developing highly testable and maintainable Web applications by leveraging the Model-View-Controller (MVC) pattern.
+      The framework encourages developers to maintain a clear separation of concerns among the responsibilities of the application – the UI logic using the view, user-input handling using the controller, and the domain logic using the model.
+      ASP.NET MVC applications are easily testable using techniques such as test-driven development (TDD).
+    </description>
+    <releaseNotes>
+      1) Templated Helpers Allow You to Specify Extra View Data
+      ASP.NET MVC 2 now includes new overloads of the EditorFor and DisplayFor methods.
+      These overloads contain a parameter that accepts an anonymous object that can be used to provide extra view data.
+      The view data provided in this parameter is merged with any existing view data that is passed to the template.
+
+      2) The UrlParmater.Optional property can be used to work around problems when binding to a model that contains an ID property when the property is absent in a form post.
+
+      3) Fixed a bug that caused Internet Explorer versions 6, 7, and 8 (in compatibility mode) to hang when client validation is used in certain scenarios.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
