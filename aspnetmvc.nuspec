@@ -2,8 +2,8 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>aspnetmvc2</id>
-    <title>ASP.NET MVC 2</title>
+    <id>aspnetmvc</id>
+    <title>ASP.NET MVC</title>
     <version>2.0.60926.0</version>
     <authors>Microsoft Asp.Net Team</authors>
 
@@ -11,7 +11,7 @@
     <projectUrl>http://www.asp.net/mvc</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <owners>Akos Murati</owners>
-    <tags>aspnetmvc aspnetmvc2 asp.net mvc mvc2 admin</tags>
+    <tags>aspnetmvc asp.net mvc mvc2 admin</tags>
 
     <summary>ASP.NET MVC 2 provides a free Model-View-Controller (MVC) framework on top of the existing ASP.NET 3.5 SP1 runtime.</summary>
     <description>
