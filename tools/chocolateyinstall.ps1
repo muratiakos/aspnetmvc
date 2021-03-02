@@ -1,21 +1,23 @@
 $ErrorActionPreference = 'Stop';
 
-$url = 'https://download.microsoft.com/download/7/B/1/7B11DE4E-0247-448E-8D39-7C9B12ABA1FF/AspNetMVC2_VS2008.exe'
+$url = 'http://download.windowsupdate.com/c/msdownload/update/software/secu/2014/10/aspnetmvc2-kb2993939_1e3f60495160a568adb51b09af5c7b0a95146764.exe'
+$checksum = '2B91A27DC45B11CB6977A214CF9E4DCF1E219F66876413F2A8D3DC4BE86B1175'
+$checksumType = 'sha256'
 
 # Download from a file share
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$downloadLocation = "$toolsDir\AspNetMVC2_VS2008.exe"
-Get-ChocolateyWebFile -PackageName 'AspNetMVC2_VS2008' -FileFullPath "$downloadLocation" -Url "$url"
+$downloadLocation = "$toolsDir\aspnetmvc2-kb2993939_1e3f60495160a568adb51b09af5c7b0a95146764.exe"
+Get-ChocolateyWebFile -PackageName 'aspnetmvc2-kb2993939' -FileFullPath "$downloadLocation" -Url "$url" -Checksum "$checksum" -ChecksumType "$checksumType"
 
 $extractLocation = "$toolsDir\extracted"
-&"$downloadLocation" /q /x:"$extractLocation"
+&"$downloadLocation" /C /T:"$extractLocation"
 
 $packageName = 'aspnetmvc2'
 $installerType = 'msi'
 
 $silentArgs = '/qn'
 
-Install-ChocolateyInstallPackage -PackageName "$packageName" -FileType "$installerType" -SilentArgs "$silentArgs" -File "$extractLocation\mvcruntime\aspnetmvc2.msi"
+Install-ChocolateyInstallPackage -PackageName "$packageName" -FileType "$installerType" -SilentArgs "$silentArgs" -File "$extractLocation\aspnetmvc2.msi"
 
 Remove-Item -Force -Recurse "$toolsDir\extracted"
 Remove-Item -Force "$downloadLocation"
