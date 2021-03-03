@@ -9,8 +9,6 @@ skip_commits:
 
 test_script:
   - ps: choco pack
-
-after_build:
   - ps: choco apikey --key ${API_KEY} --source https://push.chocolatey.org/
   - ps: choco push aspnetmvc2.2.0.60926.0.nupkg --source https://push.chocolatey.org/
 
