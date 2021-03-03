@@ -9,6 +9,7 @@
 
     <licenseUrl>http://aspnet.codeplex.com/license</licenseUrl>
     <projectUrl>http://www.asp.net/mvc</projectUrl>
+    <packageSourceUrl>https://github.com/muratiakos/aspnetmvc2</packageSourceUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <owners>Akos Murati</owners>
     <tags>aspnetmvc aspnetmvc2 asp.net mvc mvc2 admin</tags>

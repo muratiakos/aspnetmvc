@@ -1,0 +1,12 @@
+# See http://www.appveyor.com/docs/appveyor-yml for many more options
+os: WMF 5
+build: false
+version: '2.0.60926.0+{build}'
+
+test_script:
+  - ps: . .\build.ps1
+
+# Skip on updates to the readme.
+skip_commits:
+  files:
+    - '**/*.md'
