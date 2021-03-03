@@ -11,7 +11,7 @@ skip_commits:
 build_script:
   - cmd: choco pack
   - cmd: choco apikey --key '%ak%' --source https://push.chocolatey.org/
-  - cmd: choco push aspnetmvc2.2.0.60926.0+20210303.nupkg --source https://push.chocolatey.org/
+  - cmd: choco push aspnetmvc2.2.0.60926.20210302.nupkg --source https://push.chocolatey.org/
 
 artifacts:
   - path: '**\*.nupkg'
