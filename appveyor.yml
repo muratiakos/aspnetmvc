@@ -3,10 +3,13 @@ os: WMF 5
 build: false
 version: '2.0.60926.0+{build}'
 
-test_script:
-  - ps: . .\build.ps1
-
-# Skip on updates to the readme.
 skip_commits:
   files:
     - '**/*.md'
+
+test_script:
+  - ps: . .\build.ps1
+
+artifacts:
+  - path: '**\*.nupkg'
+    name: aspnetmvc2
