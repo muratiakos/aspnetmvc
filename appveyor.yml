@@ -1,8 +1,5 @@
 # See http://www.appveyor.com/docs/appveyor-yml for many more options
 os: WMF 5
-# build: false
-# version: '2.0.60926.0+{build}'
-
 environment:
   ak:
     secure: VFal8JQzVDPrwBSQIvFjqUgDISSIqDvMyIt629JkIVnISd2Y72miZuvLfi7bsnzK
@@ -14,7 +11,7 @@ skip_commits:
 build_script:
   - cmd: choco pack
   - cmd: choco apikey --key '%ak%' --source https://push.chocolatey.org/
-  - cmd: choco push aspnetmvc2.2.0.60926.0.nupkg --source https://push.chocolatey.org/
+  - cmd: choco push aspnetmvc2.2.0.60926.0+20210303.nupkg --source https://push.chocolatey.org/
 
 artifacts:
   - path: '**\*.nupkg'
