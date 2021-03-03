@@ -1,13 +1,13 @@
 # See http://www.appveyor.com/docs/appveyor-yml for many more options
 os: WMF 5
-build: false
-version: '2.0.60926.0+{build}'
+# build: false
+# version: '2.0.60926.0+{build}'
 
 skip_commits:
   files:
     - '**/*.md'
 
-test_script:
+build_script:
   - ps: choco pack
   - ps: choco apikey --key ${API_KEY} --source https://push.chocolatey.org/
   - ps: choco push aspnetmvc2.2.0.60926.0.nupkg --source https://push.chocolatey.org/
