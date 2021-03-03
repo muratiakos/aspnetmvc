@@ -13,7 +13,7 @@ skip_commits:
 
 build_script:
   - ps: choco pack
-  - ps: choco apikey --key ${ak} --source https://push.chocolatey.org/
+  - ps: 'choco apikey --key {ak} --source https://push.chocolatey.org/'
   - ps: choco push aspnetmvc2.2.0.60926.0.nupkg --source https://push.chocolatey.org/
 
 artifacts:
